@@ -1,6 +1,5 @@
 package com.cbre.automation;
 
-import okhttp3.Response;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -13,6 +12,7 @@ public interface IClient {
 	@Headers({"Content-Type: application/json"})
 	Call<ResponseBody> callGetRefresh();
 	
-	Call<ResponseBody> callLogin();
+	Call<ResponseBody> callSignUp();
 	
+	Call<ResponseBody> callLogin();
 }
